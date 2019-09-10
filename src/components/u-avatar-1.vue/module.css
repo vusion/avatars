@@ -1,0 +1,10 @@
+@extend;
+
+.root {
+    background-color: #556080;
+    background-image: url(./assets/avatar-male.svg);
+}
+
+.root[type="female"] {
+    background-image: url(./assets/avatar-female.svg);
+}
