@@ -1,4 +1,4 @@
-# UAvatar2 头像
+# UAvatar5 头像
 
 顶部导航栏或页面中局部使用的用户头像。
 
@@ -7,7 +7,7 @@
 ### 安装
 
 ``` shell
-npm i --save @proto-ui/u-avatar-2.vue
+npm i --save @proto-ui/u-avatar-5.vue
 ```
 
 ### 引入
@@ -15,7 +15,7 @@ npm i --save @proto-ui/u-avatar-2.vue
 直接注册
 
 ``` js
-import UAvatar from '@proto-ui/u-avatar-2.vue';
+import UAvatar from '@proto-ui/u-avatar-5.vue';
 
 Vue.component('u-avatar', UAvatar);
 ```
@@ -24,7 +24,7 @@ Vue.component('u-avatar', UAvatar);
 
 ``` js
 import { install } from 'vusion-utils';
-import UAvatar from '@proto-ui/u-avatar-2.vue';
+import UAvatar from '@proto-ui/u-avatar-5.vue';
 
 install(Vue, { UAvatar });
 ```
@@ -34,7 +34,12 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-2></u-avatar-2> 王小明</div>
+    <div><u-avatar-5></u-avatar-5> 王小明</div>
+    <div><u-avatar-5 type="boy-glasses"></u-avatar-5> 戴眼镜的王小明</div>
+    <div><u-avatar-5 type="girl"></u-avatar-5> 李小雪</div>
+    <div><u-avatar-5 type="girl-glasses"></u-avatar-5> 戴眼镜的李小雪</div>
+    <div><u-avatar-5 type="alien"></u-avatar-5> 外星人</div>
+    <div><u-avatar-5 type="alien-glasses"></u-avatar-5> 戴眼镜的外星人</div>
 </u-linear-layout>
 ```
 
@@ -42,11 +47,11 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-2 size="mini"></u-avatar-2> 王小明（迷你）</div>
-    <div><u-avatar-2 size="small"></u-avatar-2> 王小明（小）</div>
-    <div><u-avatar-2></u-avatar-2> 王小明（正常）</div>
-    <div><u-avatar-2 size="large"></u-avatar-2> 王小明（大）</div>
-    <div><u-avatar-2 size="huge"></u-avatar-2> 王小明（大）</div>
+    <div><u-avatar-5 size="mini"></u-avatar-5> 王小明（迷你）</div>
+    <div><u-avatar-5 size="small"></u-avatar-5> 王小明（小）</div>
+    <div><u-avatar-5></u-avatar-5> 王小明（正常）</div>
+    <div><u-avatar-5 size="large"></u-avatar-5> 王小明（大）</div>
+    <div><u-avatar-5 size="huge"></u-avatar-5> 王小明（大）</div>
 </u-linear-layout>
 ```
 
@@ -54,19 +59,19 @@ install(Vue, { UAvatar });
 
 ```html
 <u-badge :value="3" corner dot>
-    <u-avatar-2></u-avatar-2>
+    <u-avatar-5></u-avatar-5>
 </u-badge>
 <br/><br/>
 <u-badge :value="3" corner dot>
-    <u-avatar-2 shape="square"></u-avatar-2>
+    <u-avatar-5></u-avatar-5>
 </u-badge>
 <br/><br/>
 <u-badge :value="120" :max="99" corner>
-    <u-avatar-2></u-avatar-2>
+    <u-avatar-5></u-avatar-5>
 </u-badge>
 <br/><br/>
 <u-badge :value="120" :max="99" corner>
-    <u-avatar-2 shape="square"></u-avatar-2>
+    <u-avatar-5></u-avatar-5>
 </u-badge>
 ```
 
@@ -81,7 +86,7 @@ install(Vue, { UAvatar });
     <u-navbar-item>配置</u-navbar-item>
     <div slot="right">
         <u-navbar-item>
-            <u-avatar-2></u-avatar-2> 王小明
+            <u-avatar-5></u-avatar-5> 王小明
         </u-navbar-item>
     </div>
 </u-navbar>
@@ -95,7 +100,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-avatar-2></u-avatar-2> 王小明</span>
+        <span slot="title"><u-avatar-5></u-avatar-5> 王小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
@@ -113,7 +118,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-2></u-avatar-2></u-badge> 王小明</span>
+        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-5></u-avatar-5></u-badge> 王小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>

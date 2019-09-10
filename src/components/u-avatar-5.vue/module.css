@@ -1,0 +1,25 @@
+@extend;
+
+.root {
+    background-image: url(./assets/boy.png?sprite=avatars);
+}
+
+.root[type="boy-glasses"] {
+    background-image: url(./assets/boy-glasses.png?sprite=avatars);
+}
+
+.root[type="girl"] {
+    background-image: url(./assets/girl.png?sprite=avatars);
+}
+
+.root[type="girl-glasses"] {
+    background-image: url(./assets/girl-glasses.png?sprite=avatars);
+}
+
+.root[type="alien"] {
+    background-image: url(./assets/alien.png?sprite=avatars);
+}
+
+.root[type="alien-glasses"] {
+    background-image: url(./assets/alien-glasses.png?sprite=avatars);
+}

@@ -34,7 +34,7 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-3 shape="square"></u-avatar-3> 云小明</div>
+    <div><u-avatar-3 shape="square"></u-avatar-3> 王小明</div>
 </u-linear-layout>
 ```
 
@@ -42,11 +42,11 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-3 shape="square" size="mini"></u-avatar-3> 云小明（迷你）</div>
-    <div><u-avatar-3 shape="square" size="small"></u-avatar-3> 云小明（小）</div>
-    <div><u-avatar-3 shape="square"></u-avatar-3> 云小明（正常）</div>
-    <div><u-avatar-3 shape="square" size="large"></u-avatar-3> 云小明（大）</div>
-    <div><u-avatar-3 shape="square" size="huge"></u-avatar-3> 云小明（大）</div>
+    <div><u-avatar-3 shape="square" size="mini"></u-avatar-3> 王小明（迷你）</div>
+    <div><u-avatar-3 shape="square" size="small"></u-avatar-3> 王小明（小）</div>
+    <div><u-avatar-3 shape="square"></u-avatar-3> 王小明（正常）</div>
+    <div><u-avatar-3 shape="square" size="large"></u-avatar-3> 王小明（大）</div>
+    <div><u-avatar-3 shape="square" size="huge"></u-avatar-3> 王小明（大）</div>
 </u-linear-layout>
 ```
 
@@ -81,7 +81,7 @@ install(Vue, { UAvatar });
     <u-navbar-item>配置</u-navbar-item>
     <div slot="right">
         <u-navbar-item>
-            <u-avatar-3 shape="square"></u-avatar-3> 云小明
+            <u-avatar-3 shape="square"></u-avatar-3> 王小明
         </u-navbar-item>
     </div>
 </u-navbar>
@@ -95,7 +95,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-avatar-3 shape="square"></u-avatar-3> 云小明</span>
+        <span slot="title"><u-avatar-3 shape="square"></u-avatar-3> 王小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
@@ -113,7 +113,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-3 shape="square"></u-avatar-3></u-badge> 云小明</span>
+        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-3 shape="square"></u-avatar-3></u-badge> 王小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
