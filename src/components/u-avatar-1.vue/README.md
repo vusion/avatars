@@ -34,7 +34,7 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-1></u-avatar-1> 云天明</div>
+    <div><u-avatar-1></u-avatar-1> 云小明</div>
     <div><u-avatar-1 type="female"></u-avatar-1> 程心</div>
 </u-linear-layout>
 ```
@@ -43,11 +43,11 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-1 size="mini"></u-avatar-1> 云天明（迷你）</div>
-    <div><u-avatar-1 size="small"></u-avatar-1> 云天明（小）</div>
-    <div><u-avatar-1></u-avatar-1> 云天明（正常）</div>
-    <div><u-avatar-1 size="large"></u-avatar-1> 云天明（大）</div>
-    <div><u-avatar-1 size="huge"></u-avatar-1> 云天明（大）</div>
+    <div><u-avatar-1 size="mini"></u-avatar-1> 云小明（迷你）</div>
+    <div><u-avatar-1 size="small"></u-avatar-1> 云小明（小）</div>
+    <div><u-avatar-1></u-avatar-1> 云小明（正常）</div>
+    <div><u-avatar-1 size="large"></u-avatar-1> 云小明（大）</div>
+    <div><u-avatar-1 size="huge"></u-avatar-1> 云小明（大）</div>
 </u-linear-layout>
 ```
 
@@ -82,7 +82,7 @@ install(Vue, { UAvatar });
     <u-navbar-item>配置</u-navbar-item>
     <div slot="right">
         <u-navbar-item>
-            <u-avatar-1></u-avatar-1> 云天明
+            <u-avatar-1></u-avatar-1> 云小明
         </u-navbar-item>
     </div>
 </u-navbar>
@@ -96,7 +96,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-avatar-1></u-avatar-1> 云天明</span>
+        <span slot="title"><u-avatar-1></u-avatar-1> 云小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
@@ -114,7 +114,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-1></u-avatar-1></u-badge> 云天明</span>
+        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-1></u-avatar-1></u-badge> 云小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
