@@ -1,0 +1,6 @@
+@extend;
+
+.root {
+    background-color: #4B5F83;
+    background-image: url(./assets/avatar.svg);
+}

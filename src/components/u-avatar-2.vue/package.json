@@ -1,0 +1,28 @@
+{
+    "name": "@proto-ui/u-avatar-2.vue",
+    "description": "Proto UI - Avatar2",
+    "version": "0.4.0",
+    "author": "Rainfore <rainforest92@126.com>",
+    "repository": "vusion/avatars",
+    "homepage": "http://vusion.github.io/avatars",
+    "bugs": {
+      "url": "http://github.com/vusion/avatars/issues"
+    },
+    "license": "MIT",
+    "keywords": [
+      "vusion",
+      "proto",
+      "ui",
+      "avatar"
+    ],
+    "tags": [
+      "vusion",
+      "proto",
+      "ui",
+      "avatar"
+    ],
+    "peerDependencies": {
+        "vue": "^2.6.10",
+        "proto-ui.vusion": "^0.4.12"
+    }
+  }
