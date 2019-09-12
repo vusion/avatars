@@ -12,7 +12,7 @@
 [download-img]: https://img.shields.io/npm/dm/@proto-ui/u-avatar-8.vue.svg?style=flat-square
 [download-url]: https://npmjs.org/package/@proto-ui/u-avatar-8.vue
 
-顶部导航栏或页面中局部使用的用户头像。扩展自 [Proto UI 的 UAvatar 组件](https://vusion.github.io/proto-ui/u-avatar)。
+顶部导航栏或页面中局部使用的用户头像。扩展自 [Proto UI 的 UAvatar 组件](https://vusion.github.io/proto-ui/components/u-avatar)。
 
 <u-linear-layout gap="small" direction="vertical">
     <u-linear-layout gap="small">
