@@ -7,16 +7,16 @@
 [![NPM Version][npm-img]][npm-url]
 [![NPM Download][download-img]][download-url]
 
-[npm-img]: http://img.shields.io/npm/v/@proto-ui/u-avatar-7.vue.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/@proto-ui/u-avatar-7.vue
-[download-img]: https://img.shields.io/npm/dm/@proto-ui/u-avatar-7.vue.svg?style=flat-square
-[download-url]: https://npmjs.org/package/@proto-ui/u-avatar-7.vue
+[npm-img]: http://img.shields.io/npm/v/@proto-ui/u-avatar-6.vue.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/@proto-ui/u-avatar-6.vue
+[download-img]: https://img.shields.io/npm/dm/@proto-ui/u-avatar-6.vue.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@proto-ui/u-avatar-6.vue
 
 顶部导航栏或页面中局部使用的用户头像。扩展自 [Proto UI 的 UAvatar 组件](https://vusion.github.io/proto-ui/u-avatar)。
 
 <u-linear-layout gap="small">
-    <u-avatar-7></u-avatar-7>
-    <u-avatar-7 shape="square"></u-avatar-7>
+    <u-avatar-6></u-avatar-6>
+    <u-avatar-6 shape="square"></u-avatar-6>
 </u-linear-layout>
 
 ## 示例
@@ -24,7 +24,7 @@
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-7></u-avatar-7> 王小明</div>
+    <div><u-avatar-6></u-avatar-6> 王小明</div>
 </u-linear-layout>
 ```
 
@@ -32,37 +32,37 @@
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-7 size="mini"></u-avatar-7> 王小明（迷你）</div>
-    <div><u-avatar-7 size="small"></u-avatar-7> 王小明（小）</div>
-    <div><u-avatar-7></u-avatar-7> 王小明（正常）</div>
-    <div><u-avatar-7 size="large"></u-avatar-7> 王小明（大）</div>
-    <div><u-avatar-7 size="huge"></u-avatar-7> 王小明（大）</div>
+    <div><u-avatar-6 size="mini"></u-avatar-6> 王小明（迷你）</div>
+    <div><u-avatar-6 size="small"></u-avatar-6> 王小明（小）</div>
+    <div><u-avatar-6></u-avatar-6> 王小明（正常）</div>
+    <div><u-avatar-6 size="large"></u-avatar-6> 王小明（大）</div>
+    <div><u-avatar-6 size="huge"></u-avatar-6> 王小明（大）</div>
 </u-linear-layout>
 ```
 
 ### 自定义图片
 
 ``` html
-<u-avatar-7><img src="~proto-ui.vusion/src/components/u-avatar.vue/assets/music.png"></u-avatar-7> 多多
+<u-avatar-6><img src="~proto-ui.vusion/src/components/u-avatar.vue/assets/music.png"></u-avatar-6> 多多
 ```
 
 ### 配合 UBadge 使用
 
 ```html
 <u-badge :value="3" corner dot>
-    <u-avatar-7></u-avatar-7>
+    <u-avatar-6></u-avatar-6>
 </u-badge>
 <br/><br/>
 <u-badge :value="3" corner dot>
-    <u-avatar-7 shape="square"></u-avatar-7>
+    <u-avatar-6 shape="square"></u-avatar-6>
 </u-badge>
 <br/><br/>
 <u-badge :value="120" :max="99" corner>
-    <u-avatar-7></u-avatar-7>
+    <u-avatar-6></u-avatar-6>
 </u-badge>
 <br/><br/>
 <u-badge :value="120" :max="99" corner>
-    <u-avatar-7 shape="square"></u-avatar-7>
+    <u-avatar-6 shape="square"></u-avatar-6>
 </u-badge>
 ```
 
@@ -77,7 +77,7 @@
     <u-navbar-item>配置</u-navbar-item>
     <div slot="right">
         <u-navbar-item>
-            <u-avatar-7></u-avatar-7> 王小明
+            <u-avatar-6></u-avatar-6> 王小明
         </u-navbar-item>
     </div>
 </u-navbar>
@@ -91,7 +91,7 @@
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-avatar-7></u-avatar-7> 王小明</span>
+        <span slot="title"><u-avatar-6></u-avatar-6> 王小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
@@ -109,7 +109,7 @@
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-7></u-avatar-7></u-badge> 王小明</span>
+        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-6></u-avatar-6></u-badge> 王小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
