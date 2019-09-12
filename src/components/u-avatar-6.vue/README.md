@@ -1,4 +1,4 @@
-# UAvatar7 头像
+# UAvatar6 头像
 
 <s-component-labels :labels="[
     'UI 组件', '行内展示',

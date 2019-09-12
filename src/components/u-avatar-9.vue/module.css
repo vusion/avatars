@@ -1,0 +1,37 @@
+@extend;
+
+.root {
+    background-image: url(./assets/avatar-1.png?sprite=avatars);
+}
+
+.root[type="2"] {
+    background-image: url(./assets/avatar-2.png?sprite=avatars);
+}
+
+.root[type="3"] {
+    background-image: url(./assets/avatar-3.png?sprite=avatars);
+}
+
+.root[type="4"] {
+    background-image: url(./assets/avatar-4.png?sprite=avatars);
+}
+
+.root[type="5"] {
+    background-image: url(./assets/avatar-5.png?sprite=avatars);
+}
+
+.root[type="6"] {
+    background-image: url(./assets/avatar-6.png?sprite=avatars);
+}
+
+.root[type="7"] {
+    background-image: url(./assets/avatar-7.png?sprite=avatars);
+}
+
+.root[type="8"] {
+    background-image: url(./assets/avatar-8.png?sprite=avatars);
+}
+
+.root[type="9"] {
+    background-image: url(./assets/avatar-9.png?sprite=avatars);
+}
