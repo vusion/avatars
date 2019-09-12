@@ -1,40 +1,30 @@
 # UAvatar7 头像
 
-顶部导航栏或页面中局部使用的用户头像。
+<s-component-labels :labels="[
+    'UI 组件', '行内展示',
+]"></s-component-labels>
 
-## 准备
+[![NPM Version][npm-img]][npm-url]
+[![NPM Download][download-img]][download-url]
 
-### 安装
+[npm-img]: http://img.shields.io/npm/v/@proto-ui/u-avatar-7.vue.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/@proto-ui/u-avatar-7.vue
+[download-img]: https://img.shields.io/npm/dm/@proto-ui/u-avatar-7.vue.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@proto-ui/u-avatar-7.vue
 
-``` shell
-npm i --save @proto-ui/u-avatar-7.vue
-```
+顶部导航栏或页面中局部使用的用户头像。扩展自 [Proto UI 的 UAvatar 组件](https://vusion.github.io/proto-ui/u-avatar)。
 
-### 引入
-
-直接注册
-
-``` js
-import UAvatar from '@proto-ui/u-avatar-7.vue';
-
-Vue.component('u-avatar', UAvatar);
-```
-
-或者使用 vusion-utils 安装
-
-``` js
-import { install } from 'vusion-utils';
-import UAvatar from '@proto-ui/u-avatar-7.vue';
-
-install(Vue, { UAvatar });
-```
+<u-linear-layout gap="small">
+    <u-avatar-7></u-avatar-7>
+    <u-avatar-7 shape="square"></u-avatar-7>
+</u-linear-layout>
 
 ## 示例
 ### 基本用法
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-7></u-avatar-7> 王小明</div>
+    <div><u-avatar-7></u-avatar-7> 云小明</div>
 </u-linear-layout>
 ```
 
@@ -42,12 +32,18 @@ install(Vue, { UAvatar });
 
 ``` html
 <u-linear-layout direction="vertical">
-    <div><u-avatar-7 size="mini"></u-avatar-7> 王小明（迷你）</div>
-    <div><u-avatar-7 size="small"></u-avatar-7> 王小明（小）</div>
-    <div><u-avatar-7></u-avatar-7> 王小明（正常）</div>
-    <div><u-avatar-7 size="large"></u-avatar-7> 王小明（大）</div>
-    <div><u-avatar-7 size="huge"></u-avatar-7> 王小明（大）</div>
+    <div><u-avatar-7 size="mini"></u-avatar-7> 云小明（迷你）</div>
+    <div><u-avatar-7 size="small"></u-avatar-7> 云小明（小）</div>
+    <div><u-avatar-7></u-avatar-7> 云小明（正常）</div>
+    <div><u-avatar-7 size="large"></u-avatar-7> 云小明（大）</div>
+    <div><u-avatar-7 size="huge"></u-avatar-7> 云小明（大）</div>
 </u-linear-layout>
+```
+
+### 自定义图片
+
+``` html
+<u-avatar-7><img src="~proto-ui.vusion/src/components/u-avatar.vue/assets/music.png"></u-avatar-7> 多多
 ```
 
 ### 配合 UBadge 使用
@@ -81,7 +77,7 @@ install(Vue, { UAvatar });
     <u-navbar-item>配置</u-navbar-item>
     <div slot="right">
         <u-navbar-item>
-            <u-avatar-7></u-avatar-7> 王小明
+            <u-avatar-7></u-avatar-7> 云小明
         </u-navbar-item>
     </div>
 </u-navbar>
@@ -95,7 +91,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-avatar-7></u-avatar-7> 王小明</span>
+        <span slot="title"><u-avatar-7></u-avatar-7> 云小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
@@ -113,7 +109,7 @@ install(Vue, { UAvatar });
     <u-navbar-divider></u-navbar-divider>
     <u-navbar-item>配置</u-navbar-item>
     <u-navbar-dropdown slot="right">
-        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-7></u-avatar-7></u-badge> 王小明</span>
+        <span slot="title"><u-badge :value="120" :max="99" corner><u-avatar-7></u-avatar-7></u-badge> 云小明</span>
         <u-navbar-menu>
             <u-navbar-menu-item>Basic</u-navbar-menu-item>
             <u-navbar-menu-item>Layout</u-navbar-menu-item>
@@ -129,11 +125,11 @@ install(Vue, { UAvatar });
 
 | Prop/Attr | Type | Default | Description |
 | --------- | ---- | ------- | ----------- |
-| size | String | `'normal'` | 头像大小。可选值：`'mini'`、`'small'`、`'normal'`、`'large'`、`'huge'`。如需自定义大小，可以直接设置`style="width: 40px; height: 40px;"` |
 | shape | String | `'circle'` | 形状。可选值：`circle`, `square` 两种类型 |
+| size | String | `'normal'` | 头像大小。可选值：`'mini'`、`'small'`、`'normal'`、`'large'`、`'huge'`。如需自定义大小，可以直接设置`style="width: 40px; height: 40px;"` |
 
 ### Slots
 
 #### (default)
 
-无
+添加自定义图片或内容。

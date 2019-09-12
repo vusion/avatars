@@ -1,6 +1,23 @@
 # UAvatar2 头像
 
-顶部导航栏或页面中局部使用的用户头像。
+<s-component-labels :labels="[
+    'UI 组件', '行内展示',
+]"></s-component-labels>
+
+[![NPM Version][npm-img]][npm-url]
+[![NPM Download][download-img]][download-url]
+
+[npm-img]: http://img.shields.io/npm/v/@proto-ui/u-avatar-2.vue.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/@proto-ui/u-avatar-2.vue
+[download-img]: https://img.shields.io/npm/dm/@proto-ui/u-avatar-2.vue.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@proto-ui/u-avatar-2.vue
+
+顶部导航栏或页面中局部使用的用户头像。扩展自 [Proto UI 的 UAvatar 组件](https://vusion.github.io/proto-ui/u-avatar)。
+
+<u-linear-layout gap="small">
+    <u-avatar-2></u-avatar-2>
+    <u-avatar-2 shape="square"></u-avatar-2>
+</u-linear-layout>
 
 ## 准备
 
@@ -20,7 +37,7 @@ import UAvatar from '@proto-ui/u-avatar-2.vue';
 Vue.component('u-avatar', UAvatar);
 ```
 
-或者使用 vusion-utils 安装
+或者使用 vusion-utils 安装（常用于同时安装多个组件）
 
 ``` js
 import { install } from 'vusion-utils';
@@ -28,6 +45,10 @@ import UAvatar from '@proto-ui/u-avatar-2.vue';
 
 install(Vue, { UAvatar });
 ```
+
+### 使用
+
+使用时，记得将示例中的组件名替换成你在项目中实际注册的组件名。
 
 ## 示例
 ### 基本用法
@@ -48,6 +69,12 @@ install(Vue, { UAvatar });
     <div><u-avatar-2 size="large"></u-avatar-2> 王小明（大）</div>
     <div><u-avatar-2 size="huge"></u-avatar-2> 王小明（大）</div>
 </u-linear-layout>
+```
+
+### 自定义图片
+
+``` html
+<u-avatar-2><img src="~proto-ui.vusion/src/components/u-avatar.vue/assets/music.png"></u-avatar-2> 多多
 ```
 
 ### 配合 UBadge 使用
@@ -129,11 +156,11 @@ install(Vue, { UAvatar });
 
 | Prop/Attr | Type | Default | Description |
 | --------- | ---- | ------- | ----------- |
-| size | String | `'normal'` | 头像大小。可选值：`'mini'`、`'small'`、`'normal'`、`'large'`、`'huge'`。如需自定义大小，可以直接设置`style="width: 40px; height: 40px;"` |
 | shape | String | `'circle'` | 形状。可选值：`circle`, `square` 两种类型 |
+| size | String | `'normal'` | 头像大小。可选值：`'mini'`、`'small'`、`'normal'`、`'large'`、`'huge'`。如需自定义大小，可以直接设置`style="width: 40px; height: 40px;"` |
 
 ### Slots
 
 #### (default)
 
-无
+添加自定义图片或内容。

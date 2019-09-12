@@ -1,18 +1,25 @@
-# 头像组件集
-
 本组件库是一些各种各样头像组件的集合。
 
 <u-avatar></u-avatar>
 <u-avatar-1 v-on:click="$router.push('components/u-avatar-1')"></u-avatar-1>
+<u-avatar-1 type="female" v-on:click="$router.push('components/u-avatar-1')"></u-avatar-1>
 <u-avatar-2 v-on:click="$router.push('components/u-avatar-2')"></u-avatar-2>
-<u-avatar-3 v-on:click="$router.push('components/u-avatar-3')"></u-avatar-3>
-<u-avatar-4 v-on:click="$router.push('components/u-avatar-4')"></u-avatar-4>
+<u-avatar-3 shape="square" v-on:click="$router.push('components/u-avatar-3')"></u-avatar-3>
+<u-avatar-4 shape="square" v-on:click="$router.push('components/u-avatar-4')"></u-avatar-4>
+<br>
 <u-avatar-5 v-on:click="$router.push('components/u-avatar-5')"></u-avatar-5>
+<u-avatar-5 type="boy-glasses" v-on:click="$router.push('components/u-avatar-5')"></u-avatar-5>
+<u-avatar-5 type="girl" v-on:click="$router.push('components/u-avatar-5')"></u-avatar-5>
+<u-avatar-5 type="girl-glasses" v-on:click="$router.push('components/u-avatar-5')"></u-avatar-5>
+<u-avatar-5 type="alien" v-on:click="$router.push('components/u-avatar-5')"></u-avatar-5>
+<u-avatar-5 type="alien-glasses" v-on:click="$router.push('components/u-avatar-5')"></u-avatar-5>
 <u-avatar-7 v-on:click="$router.push('components/u-avatar-7')"></u-avatar-7>
 
 ## 准备
 
 ### 安装
+
+使用 npm 安装某个组件，下面以 UAvatar5 为例：
 
 ``` shell
 npm i --save @proto-ui/u-avatar-5.vue
