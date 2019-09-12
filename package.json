@@ -17,6 +17,7 @@
     "eslint": "^5.15.3",
     "eslint-config-vusion": "^3.0.2",
     "husky": "^3.0.4",
+    "lerna": "^3.16.4",
     "stylelint": "^9.3.0",
     "stylelint-config-vusion": "^1.1.2",
     "vue": "^2.6.10",
