@@ -23,6 +23,6 @@
     ],
     "peerDependencies": {
         "vue": "^2.6.10",
-        "proto-ui.vusion": "^0.4.12"
+        "proto-ui.vusion": "^0.4.20"
     }
   }
