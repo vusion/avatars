@@ -5,3 +5,4 @@ export { UAvatar as UAvatar4 } from './u-avatar-4.vue';
 export { UAvatar as UAvatar5 } from './u-avatar-5.vue';
 export { UAvatar as UAvatar6 } from './u-avatar-6.vue';
 export { UAvatar as UAvatar7 } from './u-avatar-7.vue';
+export { UAvatar as UAvatar8 } from './u-avatar-8.vue';

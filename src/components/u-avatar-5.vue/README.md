@@ -161,6 +161,7 @@ install(Vue, { UAvatar });
 
 | Prop/Attr | Type | Default | Description |
 | --------- | ---- | ------- | ----------- |
+| type | String | `'boy'` | 头像类型。请参考上面的示例 |
 | shape | String | `'circle'` | 形状。可选值：`circle`, `square` 两种类型 |
 | size | String | `'normal'` | 头像大小。可选值：`'mini'`、`'small'`、`'normal'`、`'large'`、`'huge'`。如需自定义大小，可以直接设置`style="width: 40px; height: 40px;"` |
 
